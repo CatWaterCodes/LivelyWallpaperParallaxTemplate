@@ -38,18 +38,20 @@ And that's it! You now have a working parallax wallpaper, that you can see how t
 If you want to customize your parallax wallpaper further, here are a few additional features you can take advantage of:
 
 ### The `fit` class:
-This class makes an image fit into frame by setting its height to `100vh`. Images used as the background of your parallax effect should not have this class, except if they have the perfect aspect ratio, as you want them to cover the whole screen.
+This class makes an image fit into frame by setting itswidth and height to `100vh`. Images used as the background of your parallax effect should not have this class, except if they have the perfect aspect ratio, as you want them to cover the whole screen.
 ```css
 .fit {
-    height: 100vh;
+  height: 100vh;
+  width: 100vh;
 }
 ```
 
 ### The `fill` class:
-This class is the opposite of the `fit` class, setting the image's height to `110vw`. It is meant for the images at the back of the parallax effect that have to cover the entire screen, with some overflow so that when they move around the background doesn't show.
+This class is the opposite of the `fit` class, setting the image's width and height to `110vw` and `100vw` respectively. It is meant for the images at the back of the parallax effect that have to cover the entire screen, with some overflow so that when they move around the background doesn't show.
 ```css
 .fill {
-    height: 110vw;
+  height: 100vw;
+  width: 110vw;
 }
 ```
 
